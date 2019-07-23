@@ -1,5 +1,5 @@
 class Chopper {
-  constuctor(ctx) {
+  constructor(ctx) {
      (this.x = 10),
        (this.y = 10),
        (this.vx = 5),
@@ -11,7 +11,8 @@ class Chopper {
    }
 
    draw() {
-     ctx.fillRect(25, 25, 100, 100);
+     this.ctx.fillRect(10, 10, 80, 130);;
+     this.ctx.fillStyle = 'green';
    }
 
    updatePosition() {
@@ -44,4 +45,5 @@ class Chopper {
  }
 
 
-}
+
+export default Chopper;
