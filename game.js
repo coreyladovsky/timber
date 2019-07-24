@@ -1,5 +1,5 @@
 import Chopper from './chopper.js';
-import { keyupListner, keydownListner } from './chopperMovement.js'
+import { keyupListener, keydownListener } from './chopperMovement.js'
 
 class Game {
   constructor() {
@@ -11,9 +11,16 @@ class Game {
 
   step() {
     this.ctx.clearRect(0,0, 800, 500);
+    this.move();
     this.chopper.draw();
+    this.chopper.updatePosition();
     this.cancelFrame = requestAnimationFrame(this.step);
   }
+
+  move() {
+   document.addEventListener("keydown", keydownListener(this.chopper));
+   document.addEventListener("keyup", keyupListener(this.chopper));
+ }
 
 }
 

@@ -7,11 +7,13 @@ class Chopper {
        (this.radius = 2),
        (this.color = "black"),
        (this.ctx = ctx),
+       (this.width = 80),
+       (this.height = 130),
        (this.movement = { up: false, down: false, left: false, right: false });
    }
 
    draw() {
-     this.ctx.fillRect(10, 10, 80, 130);;
+     this.ctx.fillRect(this.x, this.y, this.width, this.height);;
      this.ctx.fillStyle = 'green';
    }
 

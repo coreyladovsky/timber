@@ -1,4 +1,4 @@
-export const keydownListner = (chopper) => (e) => {
+export const keydownListener = (chopper) => (e) => {
  switch (e.key) {
    case "ArrowUp":
    case "w":
@@ -28,7 +28,7 @@ export const keydownListner = (chopper) => (e) => {
 };
 
 
-export const keyupListner = (chopper) => (e) => {
+export const keyupListener = (chopper) => (e) => {
   switch (e.key) {
     case "ArrowUp":
     case "w":
