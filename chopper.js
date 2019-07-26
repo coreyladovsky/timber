@@ -27,13 +27,13 @@ class Chopper {
      }
      if (this.movement.down) {
        this.y += this.vy;
-       if(this.y > canvas.height) {
+       if(this.y + this.height > canvas.height) {
          this.y -= this.vy
        }
      }
      if (this.movement.right) {
        this.x += this.vx;
-       if(this.x > canvas.width) {
+       if(this.x + this.width > canvas.width) {
          this.x -= this.vx
        }
      }
